@@ -45,5 +45,7 @@ namespace Hangfire.MAMQSqlExtension
         {
             _inner.WriteOptionsToLog(logger);
         }
+
+        public override bool HasFeature(string featureId) => this._inner.HasFeature(featureId);
     }
 }
